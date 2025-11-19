@@ -9,7 +9,7 @@ packages <- c(
 )
 lapply(packages, require, character.only = TRUE)
 
-## Example: A certain blood trait/metabolit/protein, suppose named "IL6"
+## Example: A certain blood trait/metabolite/protein, suppose named "IL6"
 model_chip2_IL6 <- glm(
   IL6 ~ chip2 + age + sex + ethnic + imd + bmi +
     nosmoking + drinkingM + sleeph + regular + dieth +
