@@ -9,8 +9,6 @@ packages <- c(
 )
 lapply(packages, require, character.only = TRUE)
 
-set.seed(123)
-
 ## Interaction Analysis
 ## Example: A certain blood trait/metabolite/protein, suppose named "IL6"
 
@@ -39,3 +37,4 @@ model_int_chip1 <- coxph(
 # blood traits/metabolites/proteins × CHIP interaction term in multivariable Cox models. 
 # Stratified hazard ratios for CHIP-negative and CHIP-positive 
 # individuals were extracted by changing the reference level of CHIP.
+
